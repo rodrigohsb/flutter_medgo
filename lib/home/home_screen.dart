@@ -18,6 +18,6 @@ class HomeScreen extends StatelessWidget {
               title: Text(app_name),
               elevation: Theme.of(context).platform == TargetPlatform.iOS ? 0.0 : 4.0,
           ),
-          body: HomeWidget(),
+          body: HomeScreenStatefulWidget(),
       ));
 }

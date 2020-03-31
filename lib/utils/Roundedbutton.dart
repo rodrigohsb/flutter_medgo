@@ -9,7 +9,7 @@ class RoundedButton extends StatelessWidget {
   double bottomMargin;
   double borderWidth;
   Color buttonColor;
-  Color splashcolor;
+  Color splashColor;
   Color highlightColor;
 
   TextStyle textStyle = new TextStyle(
@@ -26,7 +26,7 @@ class RoundedButton extends StatelessWidget {
         this.borderWidth,
         this.width,
         this.buttonColor,
-      this.splashcolor,
+      this.splashColor,
       this.highlightColor});
 
   @override
@@ -47,7 +47,7 @@ class RoundedButton extends StatelessWidget {
                   width: borderWidth)),
           child: new Text(buttonName, style: textStyle),
         ),
-        splashColor: splashcolor,
+        splashColor: splashColor,
           highlightColor:highlightColor,
       ));
     else

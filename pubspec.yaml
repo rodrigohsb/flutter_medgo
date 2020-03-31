@@ -5,6 +5,7 @@ dependencies:
   http: 0.11.3+16
   flutter_facebook_login: ^1.1.1
   shared_preferences: ^0.4.2
+  chewie: 0.6.1
       
   flutter:
     sdk: flutter
@@ -32,6 +33,9 @@ flutter:
   assets:
     - images/medgo.png
     - images/login_bg.jpg
+    - images/facebook_logo.png
+    - images/wallpaper.jpg
+    - images/github.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

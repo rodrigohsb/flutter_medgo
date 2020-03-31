@@ -48,12 +48,12 @@
 		<dict>
 		<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb149065582519942</string>
+				<string>fb454444251604165</string>
 			</array>
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
-	<string>149065582519942</string>
+	<string>454444251604165</string>
 	<key>FacebookDisplayName</key>
 	<string>Medgo</string>
 </dict>

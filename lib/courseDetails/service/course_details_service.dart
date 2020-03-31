@@ -1,21 +1,16 @@
-import '../../domain/course_details.dart';
+import '../../domain/module_details.dart';
 import 'dart:async';
-import '../../webservice/fetch_course_details.dart';
-import '../../service/AuthService.dart';
+import '../../webservice/request.dart';
+import '../../service/auth_service.dart';
 
 class CourseDetailsService {
 
-  final authService = AuthService();
-
-  Future<CourseDetails> retrieveDetails(int courseId) async {
-
-    var accessToken = await authService.fetchAccessToken();
-    var token = "Bearer $accessToken";
-
-    var response = await fetchDetails(courseId, token);
+  Future<ModuleDetails> retrieveDetails(int id) async {
+    final token = await fetchAccessToken();
+    var response = await fetchDetails(id, token);
     return _convertToCourseDetails(response);
   }
 
-  CourseDetails _convertToCourseDetails(Map<String, dynamic> responseJson) => 
-    CourseDetails.fromJson(responseJson);
+  ModuleDetails _convertToCourseDetails(Map<String, dynamic> responseJson) => 
+    ModuleDetails.fromJson(responseJson);
 }

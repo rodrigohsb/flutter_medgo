@@ -1,0 +1,1 @@
+import 'package:chewie/chewie.dart';

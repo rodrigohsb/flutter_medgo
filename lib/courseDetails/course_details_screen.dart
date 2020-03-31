@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
-
 import 'course_details_widget.dart';
 
 class CourseDetailsScreen extends StatelessWidget {
@@ -22,6 +21,6 @@ class CourseDetailsScreen extends StatelessWidget {
           elevation:
               Theme.of(context).platform == TargetPlatform.iOS ? 0.0 : 4.0,
         ),
-        body: CourseDetailsWidget(courseId),
+        body: CourseDetailsStatefulWidget(courseId),
       );
 }

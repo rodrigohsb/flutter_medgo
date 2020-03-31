@@ -22,9 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
     
     var widget;
 
-    final bool hasAccessToken = await _hasAccessToken();
-
-    if(hasAccessToken) {
+    if(await _hasAccessToken()) {
       widget = HomeScreen();
     } else{
       widget = LoginScreen();
